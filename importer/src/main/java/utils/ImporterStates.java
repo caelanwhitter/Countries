@@ -53,13 +53,14 @@ public class ImporterStates {
                 States states = new States();
 
                 String[] stateAttributes = line.split(splitby);
-                // System.out.println(stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", "
+                // System.out.println(stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", "
                 //         + stateAttributes);
                 /**
                  * Set name, country name, longitude and latitude 
                  */
-                states.setName(stateAttributes[]);
+                states.setName(stateAttributes[1]);
                 states.setCountry(stateAttributes[]);
+                states.setType(stateAttributes[]);
                 states.setLongitude(stateAttributes[]);
                 states.setLatitude(stateAttributes[]);
 
