@@ -16,6 +16,9 @@ public class Importer {
     /**
      * Create private fields for every field of a City
      */
+    private String line = " ";
+    private String splitby = ",";
+
     private String cityAttributesPath;
     private String stateAttributesPath;
     private String countryAttributesPath;
@@ -34,36 +37,136 @@ public class Importer {
 
     public ArrayList[] fetchDataFromDataset() throws IOException {
 
-        String line = " ";
-        String splitby = ",";
 
         /**
          * a try-catch method to extract data from csv file
          */
-        fileReader(cityAttributesPath);
-        fileReader(stateAttributesPath);
-        fileReader(countryAttributesPath);
-      
-      
-        try {
-           
+        BufferedReader city = fileReader(cityAttributesPath);
+        BufferedReader state = fileReader(stateAttributesPath);
+        BufferedReader country = fileReader(countryAttributesPath);
+        pickDataCity(city);
+        pickDataState(state);
+        pickDataCountry(country);
+        return new ArrayList[] {cityList, stateList, countryList};
+    }
+  
+  public BufferedReader fileReader(String file) throws IOException {
+    
+          FileInputStream fis = new FileInputStream(file);
+        InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
+        BufferedReader reader = new BufferedReader(isr);
+      return reader;
+  }
+    
+      public void pickDataCity(BufferedReader reader) throws IOException {
+    
+       try {
+            boolean firstLine = true;
+            while ((this.line = reader.readLine()) != null) {
+                /**
+                 * Skip the first line of the csv file
+                 */
+                if (firstLine) {
+                    firstLine = false;
+                    continue;
+                }
+                Cities cities = new Cities();
+
+                String[] cityAttributes = line.split(this.splitby);
+                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
+                //         + cityAttributes[9]);
+                /**
+                 * Set name, country, longitude and latitude
+                 */
+                cities.setName(cityAttributes[1]);
+                cities.setCountry(cityAttributes[7]);
+                cities.setLongitude(cityAttributes[8]);
+                cities.setLatitude(cityAttributes[9]);
+
+                /* Add Cities into list */
+                cityList.add(cities);
+
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             reader.close();
         }
-
-        /**
-         * Return the List of Cities
-         */
-        return new ArrayList[] {cityList, stateList, countryList};
-    }
-  
-  public void fileReader(String file) throws IOException {
-    
-          FileInputStream fis = new FileInputStream(file);
-        InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
-        BufferedReader reader = new BufferedReader(isr);
   }
+    
+    public void pickDataState(BufferedReader reader) throws IOException {
+    
+       try {
+            boolean firstLine = true;
+            while ((this.line = reader.readLine()) != null) {
+                /**
+                 * Skip the first line of the csv file
+                 */
+                if (firstLine) {
+                    firstLine = false;
+                    continue;
+                }
+                Cities cities = new Cities();
+
+                String[] cityAttributes = line.split(this.splitby);
+                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
+                //         + cityAttributes[9]);
+                /**
+                 * Set name, country, longitude and latitude
+                 */
+                cities.setName(cityAttributes[1]);
+                cities.setCountry(cityAttributes[7]);
+                cities.setLongitude(cityAttributes[8]);
+                cities.setLatitude(cityAttributes[9]);
+
+                /* Add Cities into list */
+                cityList.add(cities);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            reader.close();
+        }
+  }
+    
+    public void pickDataCountry(BufferedReader reader) throws IOException {
+    
+       try {
+            boolean firstLine = true;
+            while ((this.line = reader.readLine()) != null) {
+                /**
+                 * Skip the first line of the csv file
+                 */
+                if (firstLine) {
+                    firstLine = false;
+                    continue;
+                }
+                Cities cities = new Cities();
+
+                String[] cityAttributes = line.split(this.splitby);
+                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
+                //         + cityAttributes[9]);
+                /**
+                 * Set name, country, longitude and latitude
+                 */
+                cities.setName(cityAttributes[1]);
+                cities.setCountry(cityAttributes[7]);
+                cities.setLongitude(cityAttributes[8]);
+                cities.setLatitude(cityAttributes[9]);
+
+                /* Add Cities into list */
+                cityList.add(cities);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            reader.close();
+        }
+  }
+    
 }
