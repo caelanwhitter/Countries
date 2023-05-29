@@ -96,10 +96,9 @@ public class Importer {
   }
     
     public void pickDataState(BufferedReader reader) throws IOException {
-    
-       try {
+           try {
             boolean firstLine = true;
-            while ((this.line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 /**
                  * Skip the first line of the csv file
                  */
@@ -107,21 +106,22 @@ public class Importer {
                     firstLine = false;
                     continue;
                 }
-                Cities cities = new Cities();
+                States states = new States();
 
-                String[] cityAttributes = line.split(this.splitby);
-                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
-                //         + cityAttributes[9]);
+                String[] stateAttributes = line.split(splitby);
+                // System.out.println(stateAttributes[1] + ", " + stateAttributes[4] + ", " + stateAttributes[6] + ", " + stateAttributes[7] + ", "
+                //         + stateAttributes[8]);
                 /**
-                 * Set name, country, longitude and latitude
+                 * Set name, country name, type, longitude and latitude 
                  */
-                cities.setName(cityAttributes[1]);
-                cities.setCountry(cityAttributes[7]);
-                cities.setLongitude(cityAttributes[8]);
-                cities.setLatitude(cityAttributes[9]);
+                states.setName(stateAttributes[1]);
+                states.setCountry(stateAttributes[4]);
+                states.setType(stateAttributes[6]);
+                states.setLongitude(stateAttributes[7]);
+                states.setLatitude(stateAttributes[8]);
 
                 /* Add Cities into list */
-                cityList.add(cities);
+                stateList.add(states);
 
             }
 
@@ -130,7 +130,7 @@ public class Importer {
         } finally {
             reader.close();
         }
-  }
+    }
     
     public void pickDataCountry(BufferedReader reader) throws IOException {
     
