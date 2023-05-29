@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Importer.java reads through every line of dataset, cleans each line and creates a Movie object
- * @author Caelan Whitter & Daniel Lam 
+ * ImporterCities.java reads through every line of dataset and creates a City object
+ * @author Caelan Whitter
  */
 public class ImporterCities {
     /**
@@ -38,15 +38,9 @@ public class ImporterCities {
         FileInputStream fis = new FileInputStream(cityAttributesPath);
         InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
         BufferedReader reader = new BufferedReader(isr);
-        //BufferedReader reader = new BufferedReader(new FileReader(movieAttributesPath));
 
         try {
             boolean firstLine = true;
-            // File file = new File("D:\\sample.txt");
-            //         // Instantiating the PrintStream class
-            //         PrintStream stream = new PrintStream(file);
-            //         System.out.println("From now on "+file.getAbsolutePath()+" will be your console");
-            //         System.setOut(stream);
             while ((line = reader.readLine()) != null) {
                 /**
                  * Skip the first line of the csv file
@@ -61,8 +55,7 @@ public class ImporterCities {
                 // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
                 //         + cityAttributes[9]);
                 /**
-                 * Set title, rating, genre and releaseYear since they never change even if a
-                 * line is missing information
+                 * Set name, country, longitude and latitude
                  */
                 cities.setName(cityAttributes[1]);
                 cities.setCountry(cityAttributes[7]);
