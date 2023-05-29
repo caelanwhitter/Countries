@@ -26,7 +26,7 @@ public class ImporterStates {
         this.cityAttributesPath = path;
     }
 
-    public List<Cities> fetchDataFromDataset() throws IOException {
+    public List<States> fetchDataFromDataset() throws IOException {
 
         String line = " ";
         String splitby = ",";
@@ -53,16 +53,16 @@ public class ImporterStates {
                 States states = new States();
 
                 String[] stateAttributes = line.split(splitby);
-                // System.out.println(stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", "
-                //         + stateAttributes);
+                // System.out.println(stateAttributes[1] + ", " + stateAttributes[4] + ", " + stateAttributes[6] + ", " + stateAttributes[7] + ", "
+                //         + stateAttributes[8]);
                 /**
-                 * Set name, country name, longitude and latitude 
+                 * Set name, country name, type, longitude and latitude 
                  */
                 states.setName(stateAttributes[1]);
-                states.setCountry(stateAttributes[]);
-                states.setType(stateAttributes[]);
-                states.setLongitude(stateAttributes[]);
-                states.setLatitude(stateAttributes[]);
+                states.setCountry(stateAttributes[4]);
+                states.setType(stateAttributes[6]);
+                states.setLongitude(stateAttributes[7]);
+                states.setLatitude(stateAttributes[8]);
 
                 /* Add Cities into list */
                 stateList.add(states);
