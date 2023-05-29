@@ -25,12 +25,12 @@ import io.github.cdimascio.dotenv.Dotenv;
  * @author Caelan Whitter
  */
 public class MongoDB {
-        public static void main( String[] args ) {
+        public static void main( String[] args ) throws IOException {
 
                 Dotenv dotenv = Dotenv.load();
                 final String ATLAS_URI = dotenv.get("ATLAS_URI");
-                final String DATABASE_NAME = "countrydb";
-                final String COLLECTION_NAME = "countries";
+                final String DATABASE_NAME = "citydb";
+                final String COLLECTION_NAME = "cities";
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "'...");
         
@@ -45,12 +45,15 @@ public class MongoDB {
                         .codecRegistry(codecRegistry).build();
                 MongoClient client = MongoClients.create(clientSettings);
         
-               // MongoDatabase database = client.getDatabase(DATABASE_NAME);
-                //MongoCollection<Movie> movies = database.getCollection(COLLECTION_NAME, Movie.class);
+                MongoDatabase database = client.getDatabase(DATABASE_NAME);
+                MongoCollection<Cities> cities = database.getCollection(COLLECTION_NAME, Cities.class);
         
-               // Importer importer = new Importer("importer/src/main/java/utils/resources/movies.csv");
-                //List<Movie> movieList = importer.fetchDataFromDataset();
-                //movies.insertMany(movieList);
+                Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv");
+                List<Cities> countryList = importer.fetchDataFromDataset();
+                // for(Cities c : countryList){
+                //         System.out.println(c);
+                // }
+                cities.insertMany(countryList);
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "' done!");
             }

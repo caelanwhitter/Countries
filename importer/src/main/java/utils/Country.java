@@ -1,10 +1,11 @@
 package utils;
-import org.bson.types.*;
+
+import java.util.*;
 
 public class Country {
     private String name, capital, currency, region, latitude, longitude, population22, population20, population15, population10;
-    // private List<States> states;
-    // private List<Cities>;
+     private List<States> states;
+     private List<Cities> cities;
 
     public Country() {
 		this.name = "Unknown";
@@ -33,115 +34,107 @@ public class Country {
 	 * @param population15
 	 * @param population10
 	 */
-	public Country(String name, String capital, String currency,String region, String latitude,String longitude, String population22,
+	public Country(String name, String capital,String region, String currency, String latitude,String longitude, String population22,
 			String population20, String population15, String population10) {
-		this.title = title;
-		this.description = description;
-		this.duration = duration;
-		this.genre = genre;
-		this.rating = rating;
-		this.poster = poster;
-		this.director = director;
-		this.score = score;
-		this.gross = gross;
-		this.releaseYear = releaseYear;
+		this.name = name;
+		this.capital = capital;
+		this.currency = currency;
+		this.region = region;
+		this.latitude = latitude;
+		this.longitude = longitude;
+		this.population22 = population22;
+		this.population20 = population20;
+		this.population15 = population15;
+		this.population10 = population10;
 	}
 
-	public ObjectId getId() {
-		return id;
+	public String getName() {
+		return name;
 	}
 
-	public void setId(ObjectId id) {
-		this.id = id;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getCapital() {
+		return capital;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setCapital(String capital) {
+		this.capital = capital;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getCurrency() {
+		return currency;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 
-	public String getDuration() {
-		return duration;
+	public String getRegion() {
+		return region;
 	}
 
-	public void setDuration(String duration) {
-		this.duration = duration;
+	public void setRegion(String region) {
+		this.region = region;
 	}
 
-	public String getGenre() {
-		return genre;
+	public String getLatitude() {
+		return latitude;
 	}
 
-	public void setGenre(String genre) {
-		this.genre = genre;
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
 	}
 
-	public String getRating() {
-		return rating;
+	public String getLongitude() {
+		return longitude;
 	}
 
-	public void setRating(String rating) {
-		this.rating = rating;
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
-	public String getPoster() {
-		return poster;
+	public String getPopulation22() {
+		return population22;
 	}
 
-	public void setPoster(String poster) {
-		this.poster = poster;
+	public void setPopulation22(String population22) {
+		this.population22 = population22;
 	}
 
-	public String getDirector() {
-		return director;
+	public String getPopulation20() {
+		return population20;
 	}
 
-	public void setDirector(String director) {
-		this.director = director;
+	public void setPopulation20(String population20) {
+		this.population20 = population20;
 	}
 
-	public String getScore() {
-		return score;
+	public String getPopulation15() {
+		return population15;
 	}
 
-	public void setScore(String score) {
-		this.score = score;
+	public void setPopulation15(String population15) {
+		this.population15 = population15;
 	}
 
-	public String getGross() {
-		return gross;
+	public String getPopulation10() {
+		return population10;
 	}
 
-	public void setGross(String gross) {
-		this.gross = gross;
+	public void setPopulation10(String population10) {
+		this.population10 = population10;
 	}
 
-	public String getReleaseYear() {
-		return releaseYear;
-	}
-
-	public void setReleaseYear(String releaseYear) {
-		this.releaseYear = releaseYear;
-	}
 
 	@Override
 	public String toString() {
-		return "MOVIE: " + description + " | " + director + " | " + duration + " | " + genre + " | " + gross + " | "
-				+ poster + " | "
-				+ rating + " | " + releaseYear + " | " + score + " | " + title;
+		return "Country: " + name + " | " + capital + " | " + region + " | " + currency + " | " + latitude + " | "+ longitude + " | "
+		+ population22 + " | " + population20 + " | " + population15 + " | " + population10;
 	}
 
 }
 
-}
+

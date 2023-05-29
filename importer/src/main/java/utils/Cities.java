@@ -1,14 +1,13 @@
 package utils;
 
-public class States {
-    private String name, country, type, latitude, longitude;
+public class Cities {
+    private String name, country, latitude, longitude;
     // private List<States> states;
     // private List<Cities>;
 
-    public States() {
+    public Cities() {
 		this.name = "Unknown";
 		this.country = "Unknown";
-		this.type = "Unknown";
 		this.latitude = "Unknown";
 		this.longitude = "Unknown";
 
@@ -24,10 +23,9 @@ public class States {
 	 * @param longitude
 
 	 */
-	public States(String name, String country,String type, String latitude,String longitude) {
+	public Cities(String name, String country, String latitude,String longitude) {
 		this.name = name;
 		this.country = country;
-		this.type = type;
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
@@ -46,14 +44,6 @@ public class States {
 
 	public void setCountry(String country) {
 		this.country = country;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 
 	public String getLatitude() {
@@ -76,7 +66,7 @@ public class States {
 
 	@Override
 	public String toString() {
-        return "Country: " + name + " | " + country + " | " + type + " | " + latitude + " | "+ longitude;
+        return "Country: " + name + " | " + country + " | " + latitude + " | "+ longitude;
 	}
 
 }
