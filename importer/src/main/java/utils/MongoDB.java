@@ -46,14 +46,22 @@ public class MongoDB {
                 MongoClient client = MongoClients.create(clientSettings);
         
                 MongoDatabase database = client.getDatabase(DATABASE_NAME);
-                MongoCollection<Cities> cities = database.getCollection(COLLECTION_NAME, Cities.class);
+                MongoCollection<Country> countries = database.getCollection(COLLECTION_NAME, Country.class);
         
-                ImporterCities importer = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
-                List<Cities> countryList = importer.fetchDataFromDataset();
+                ImporterCities importerCity = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
+                ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
+                ImporterStates importerState = new ImporterStates("importer/src/main/java/utils/resources/states.csv");
+                //ImporterPop importerPop = new ImporterPop("importer/src/main/java/utils/resources/world_population.csv");
+                List<Country> countryList = importerCountry.fetchDataFromDataset();
+                List<State> stateList = importerState.fetchDataFromDataset();
+                List<Cities> cityList = importer.fetchDataFromDataset();
+               // List<Pop> popList = importer.fetchDataFromDataset();
                 // for(Cities c : countryList){
                 //         System.out.println(c);
                 // }
-                cities.insertMany(countryList);
+                countries.insertMany(countryList);
+                countries.insertMany(stateList);
+                countries.insertMany(cityList);
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "' done!");
             }
