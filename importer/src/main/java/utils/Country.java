@@ -3,7 +3,7 @@ package utils;
 import java.util.*;
 
 public class Country {
-    private String name, capital, currency, region, latitude, longitude, population22, population20, population15, population10;
+    private String name, capital, currency, currencyName, currencySymbol, region, latitude, longitude, population22, population20, population15, population10;
      private List<States> states;
      private List<Cities> cities;
 
@@ -11,6 +11,8 @@ public class Country {
 		this.name = "Unknown";
 		this.capital = "Unknown";
 		this.currency = "Unknown";
+	   	this.currencyName = "Unknown";
+	   	this.currencySymbol = "Unknown";
 		this.region = "Unknown";
 		this.latitude = "Unknown";
 		this.longitude = "Unknown";
@@ -26,7 +28,9 @@ public class Country {
 	 * @param name
 	 * @param capital
 	 * @param currency
-     * @param region
+	 * @param currencyName
+	 * @param currencySymbol
+     	 * @param region
 	 * @param latitude
 	 * @param longitude
 	 * @param population22
@@ -34,11 +38,13 @@ public class Country {
 	 * @param population15
 	 * @param population10
 	 */
-	public Country(String name, String capital,String region, String currency, String latitude,String longitude, String population22,
+	public Country(String name, String capital,String region, String currency, String currencyName, String currencySymbol, String latitude,String longitude, String population22,
 			String population20, String population15, String population10) {
 		this.name = name;
 		this.capital = capital;
 		this.currency = currency;
+		this.currency = currencyName;
+		this.currency = currencySymbol;
 		this.region = region;
 		this.latitude = latitude;
 		this.longitude = longitude;
@@ -70,6 +76,22 @@ public class Country {
 
 	public void setCurrency(String currency) {
 		this.currency = currency;
+	}
+	
+	public String getCurrencyName() {
+		return currencyName;
+	}
+
+	public void setCurrencyName(String currencyName) {
+		this.currencyName = currencyName;
+	}
+	
+	public String getCurrencySymbol() {
+		return currencySymbol;
+	}
+
+	public void setCurrencySymbol(String currencySymbol) {
+		this.currencySymbol = currencySymbol;
 	}
 
 	public String getRegion() {
@@ -131,8 +153,8 @@ public class Country {
 
 	@Override
 	public String toString() {
-		return "Country: " + name + " | " + capital + " | " + region + " | " + currency + " | " + latitude + " | "+ longitude + " | "
-		+ population22 + " | " + population20 + " | " + population15 + " | " + population10;
+		return "Country: " + name + " | " + capital + " | " + region + " | " + currency +  " | " + currencyName + " | " + currencySymbol +
+			" | " + latitude + " | "+ longitude + " | "+ population22 + " | " + population20 + " | " + population15 + " | " + population10;
 	}
 
 }
