@@ -44,9 +44,11 @@ public class Importer {
         BufferedReader city = fileReader(cityAttributesPath);
         BufferedReader state = fileReader(stateAttributesPath);
         BufferedReader country = fileReader(countryAttributesPath);
+        
         pickDataCity(city);
         pickDataState(state);
         pickDataCountry(country);
+        
         return new ArrayList[] {cityList, stateList, countryList};
     }
   
@@ -133,10 +135,9 @@ public class Importer {
     }
     
     public void pickDataCountry(BufferedReader reader) throws IOException {
-    
-       try {
+     try {
             boolean firstLine = true;
-            while ((this.line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 /**
                  * Skip the first line of the csv file
                  */
@@ -144,21 +145,25 @@ public class Importer {
                     firstLine = false;
                     continue;
                 }
-                Cities cities = new Cities();
+                Country countries = new Country();
 
-                String[] cityAttributes = line.split(this.splitby);
-                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
-                //         + cityAttributes[9]);
+                String[] countryAttributes = line.split(splitby);
+                // System.out.println(countryAttributes[1] + ", " + countryAttributes[6] + ", " + countryAttributes[7] + ", " + countryAttributes[8] +
+                // ", " + countryAttributes[9] + ", " + countryAttributes[12] + ", " + countryAttributes[15] + ", " + countryAttributes[16]);
                 /**
-                 * Set name, country, longitude and latitude
+                 * Set name, capital,currency, currency name, currency symbol, region, longitude and latitude
                  */
-                cities.setName(cityAttributes[1]);
-                cities.setCountry(cityAttributes[7]);
-                cities.setLongitude(cityAttributes[8]);
-                cities.setLatitude(cityAttributes[9]);
+                countries.setName(countryAttributes[1]);
+                countries.setCapital(countryAttributes[6]);
+                countries.setCurrency(countryAttributes[7]);
+                countries.setCurrencyName(countryAttributes[8]);
+                countries.setCurrencySymbol(countryAttributes[9]);
+                countries.setRegion(countryAttributes[12]);
+                countries.setLongitude(countryAttributes[15]);
+                countries.setLatitude(countryAttributes[16]);
 
-                /* Add Cities into list */
-                cityList.add(cities);
+                /* Add Countries into list */
+                countryList.add(countries);
 
             }
 
@@ -167,6 +172,7 @@ public class Importer {
         } finally {
             reader.close();
         }
+
   }
     
 }
