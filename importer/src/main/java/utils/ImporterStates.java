@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Importer.java reads through every line of dataset, cleans each line and creates a Movie object
- * @author Caelan Whitter & Daniel Lam 
+ * Importer.java reads through every line of dataset and creates a State object
+ * @author Caelan Whitter
  */
 public class ImporterStates {
     /**
@@ -22,7 +22,7 @@ public class ImporterStates {
     /**
      * set the path to the csv file
      */
-    public Importer(String path) {
+    public ImporterStates(String path) {
         this.cityAttributesPath = path;
     }
 
@@ -56,13 +56,12 @@ public class ImporterStates {
                 // System.out.println(stateAttributes + ", " + stateAttributes + ", " + stateAttributes + ", "
                 //         + stateAttributes);
                 /**
-                 * Set title, rating, genre and releaseYear since they never change even if a
-                 * line is missing information
+                 * Set name, country name, longitude and latitude 
                  */
-                states.setName(cityAttributes[1]);
-                states.setCountry(cityAttributes[7]);
-                states.setLongitude(cityAttributes[8]);
-                states.setLatitude(cityAttributes[9]);
+                states.setName(stateAttributes[]);
+                states.setCountry(stateAttributes[]);
+                states.setLongitude(stateAttributes[]);
+                states.setLatitude(stateAttributes[]);
 
                 /* Add Cities into list */
                 stateList.add(states);
@@ -76,7 +75,7 @@ public class ImporterStates {
         }
 
         /**
-         * Return the List of movies
+         * Return the List of States
          */
         return stateList;
     }
