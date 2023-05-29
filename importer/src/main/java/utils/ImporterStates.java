@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class ImporterStates {
     /**
-     * Create private fields for every field of a movie
+     * Create private fields for every field of a State
      */
     private String cityAttributesPath;
     private List<States> stateList = new ArrayList<States>();
