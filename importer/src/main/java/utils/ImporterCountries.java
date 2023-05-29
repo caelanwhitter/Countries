@@ -52,15 +52,19 @@ public class ImporterCountries {
                 Country countries = new Country();
 
                 String[] countryAttributes = line.split(splitby);
-                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
-                //         + cityAttributes[9]);
+                // System.out.println(countryAttributes[1] + ", " + countryAttributes[6] + ", " + countryAttributes[7] + ", " + countryAttributes[8] +
+                // ", " + countryAttributes[9] + ", " + countryAttributes[12] + ", " + countryAttributes[15] + ", " + countryAttributes[16]);
                 /**
-                 * Set name, country, longitude and latitude
+                 * Set name, capital,currency, currency name, currency symbol, region, longitude and latitude
                  */
-                countries.setName(countryAttributes[]);
-                countries.setCountry(countryAttributes[]);
-                countries.setLongitude(countryAttributes[]);
-                countries.setLatitude(countryAttributes[]);
+                countries.setName(countryAttributes[1]);
+                countries.setCapital(countryAttributes[6]);
+                countries.setCurrency(countryAttributes[7]);
+                countries.setCurrencyName(countryAttributes[8]);
+                countries.setCurrencySymbol(countryAttributes[9]);
+                countries.setRegion(countryAttributes[12]);
+                countries.setLongitude(countryAttributes[15]);
+                countries.setLatitude(countryAttributes[16]);
 
                 /* Add Countries into list */
                 countryList.add(countries);
