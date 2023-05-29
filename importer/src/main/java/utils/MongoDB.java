@@ -48,7 +48,7 @@ public class MongoDB {
                 MongoDatabase database = client.getDatabase(DATABASE_NAME);
                 MongoCollection<Cities> cities = database.getCollection(COLLECTION_NAME, Cities.class);
         
-                Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv");
+                ImporterCities importer = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
                 List<Cities> countryList = importer.fetchDataFromDataset();
                 // for(Cities c : countryList){
                 //         System.out.println(c);
