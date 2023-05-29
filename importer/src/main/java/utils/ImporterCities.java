@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class ImporterCities {
     /**
-     * Create private fields for every field of a movie
+     * Create private fields for every field of a City
      */
     private String cityAttributesPath;
     private List<Cities> cityList = new ArrayList<Cities>();
@@ -74,7 +74,7 @@ public class ImporterCities {
         }
 
         /**
-         * Return the List of movies
+         * Return the List of Cities
          */
         return cityList;
     }
