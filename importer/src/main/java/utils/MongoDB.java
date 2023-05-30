@@ -55,16 +55,14 @@ public class MongoDB {
                 //ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
                 //ImporterStates importerState = new ImporterStates("importer/src/main/java/utils/resources/states.csv");
                 //ImporterPop importerPop = new ImporterPop("importer/src/main/java/utils/resources/world_population.csv");
-                List<Country> countryList = importerCountry.fetchDataFromDataset();
-                List<State> stateList = importerState.fetchDataFromDataset();
-                List<Cities> cityList = importer.fetchDataFromDataset();
+                List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
+                
                
-                // for(Cities c : countryList){
+                // for (Object c : countryList) {
                 //         System.out.println(c);
                 // }
-                countries.insertMany(countryList);
-                countries.insertMany(stateList);
-                countries.insertMany(cityList);
+                
+            
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "' done!");
             }

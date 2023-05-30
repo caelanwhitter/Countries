@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -22,20 +23,23 @@ public class Importer {
     private String cityAttributesPath;
     private String stateAttributesPath;
     private String countryAttributesPath;
+    private String populationAttributesPath;
+
     private List<Cities> cityList = new ArrayList<Cities>();
-    private List<States> cityList = new ArrayList<States>();
-    private List<Country> cityList = new ArrayList<Country>();
+    private List<States> stateList = new ArrayList<States>();
+    private List<Country> countryList = new ArrayList<Country>();
 
     /**
      * set the paths to the csv file
      */
-    public Importer(String pathCity, String pathState, String pathCountry) {
-        this.cityAttributesPath = path;
-        this.stateAttributesPath = path;
-        this.countryAttributesPath = path;
+    public Importer(String pathCity, String pathState, String pathCountry,String pathPopulation) {
+        this.cityAttributesPath = pathCity;
+        this.stateAttributesPath = pathState;
+        this.countryAttributesPath = pathCountry;
+        this.populationAttributesPath = pathPopulation;
     }
 
-    public ArrayList[] fetchDataFromDataset() throws IOException {
+    public List<List<? extends Object>> fetchDataFromDataset() throws IOException {
 
 
         /**
@@ -44,12 +48,14 @@ public class Importer {
         BufferedReader city = fileReader(cityAttributesPath);
         BufferedReader state = fileReader(stateAttributesPath);
         BufferedReader country = fileReader(countryAttributesPath);
+        BufferedReader population = fileReader(populationAttributesPath);
         
-        pickDataCity(city);
+        //pickDataCity(city);
         pickDataState(state);
-        pickDataCountry(country);
+       // pickDataCountry(country);
+        //pickDataPopulation(population);
         
-        return new ArrayList[] {cityList, stateList, countryList};
+        return  Arrays.asList(cityList, stateList, countryList);
     }
   
   public BufferedReader fileReader(String file) throws IOException {
@@ -97,7 +103,8 @@ public class Importer {
         }
   }
     
-    public void pickDataState(BufferedReader reader) throws IOException {
+  public void pickDataState(BufferedReader reader) throws IOException {
+      int count = 0;
            try {
             boolean firstLine = true;
             while ((line = reader.readLine()) != null) {
@@ -108,9 +115,25 @@ public class Importer {
                     firstLine = false;
                     continue;
                 }
+                
+                
+               
                 States states = new States();
-
                 String[] stateAttributes = line.split(splitby);
+                if (stateAttributes.length <= 6) {
+                    
+                    states.setName(stateAttributes[1]);
+                    states.setCountry(stateAttributes[4]);
+
+                }
+                else if (stateAttributes.length == 7) {
+                    states.setName(stateAttributes[1]);
+                    states.setCountry(stateAttributes[4]);
+                    states.setType(stateAttributes[6]);
+                
+                }
+                else{
+                   
                 // System.out.println(stateAttributes[1] + ", " + stateAttributes[4] + ", " + stateAttributes[6] + ", " + stateAttributes[7] + ", "
                 //         + stateAttributes[8]);
                 /**
@@ -121,8 +144,8 @@ public class Importer {
                 states.setType(stateAttributes[6]);
                 states.setLongitude(stateAttributes[7]);
                 states.setLatitude(stateAttributes[8]);
-
-                /* Add Cities into list */
+            }
+                 /* Add Cities into list */
                 stateList.add(states);
 
             }

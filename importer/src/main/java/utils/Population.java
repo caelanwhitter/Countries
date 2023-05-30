@@ -3,18 +3,14 @@ package utils;
 import java.util.*;
 
 public class Population {
-    private String name, capital, currency, currencyName, currencySymbol, region, latitude, longitude, population22, population20, population15, population10;
+    private String country, continent, population22, population20, population15, population10, area, populationPercent;
 
 
     public Population() {
-		this.name = "Unknown";
-		this.capital = "Unknown";
-		this.currency = "Unknown";
-	   	this.currencyName = "Unknown";
-	   	this.currencySymbol = "Unknown";
-		this.region = "Unknown";
-		this.latitude = "Unknown";
-		this.longitude = "Unknown";
+		this.country = "Unknown";
+		this.continent = "Unknown";
+		this.area = "Unknown";
+	   	this.populationPercent = "Unknown";
 		this.population22 = "Unknown";
 		this.population20 = "Unknown";
 		this.population15 = "Unknown";
@@ -24,57 +20,32 @@ public class Population {
 	/**
 	 * Parameterised Constructor
 	 * 
-	 * @param name
-	 * @param capital
-	 * @param currency
-	 * @param currencyName
-	 * @param currencySymbol
-     	 * @param region
-	 * @param latitude
-	 * @param longitude
+	 * @param country
+	 * @param continent
+	 * @param area
+	 * @param populationPercent
 	 * @param population22
 	 * @param population20
 	 * @param population15
 	 * @param population10
 	 */
-	public Population(String name, String capital,String region, String currency, String currencyName, String currencySymbol, String latitude,String longitude, String population22,
-			String population20, String population15, String population10) {
-		this.name = name;
-		this.capital = capital;
-		this.currency = currency;
-		this.currency = currencyName;
-		this.currency = currencySymbol;
-		this.region = region;
-		this.latitude = latitude;
-		this.longitude = longitude;
+	public Population(String country, String continent,String area, String populationPercent, String population22,String population20, String population15, String population10) {
+		this.country = country;
+		this.continent = continent;
+		this.area = area;
+		this.populationPercent = populationPercent;
 		this.population22 = population22;
 		this.population20 = population20;
 		this.population15 = population15;
 		this.population10 = population10;
 	}
 
-	public String getName() {
-		return name;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getCapital() {
-		return capital;
-	}
-
-	public void setCapital(String capital) {
-		this.capital = capital;
-	}
-
-	public String getCurrency() {
-		return currency;
-	}
-
-	public void setCurrency(String currency) {
-		this.currency = currency;
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	
 	public String getContinent() {
@@ -136,8 +107,8 @@ public class Population {
 
 	@Override
 	public String toString() {
-		return "Country: " + country + " | " + continent + " | " + population22 + " | " + population20 + 
-      " | " + population15 + " | " + population10 + " | " + area + " | " + populationPercent +;
+		return "Country: " + country + " | " + continent + " | "  + area + " | " + populationPercent + " | " + population22 + " | " + population20 + 
+      " | " + population15 + " | " + population10 + " | " ;
 	}
 
 }
@@ -147,11 +118,4 @@ public class Population {
 
 
 
-// country=2
-// continent=4
-// 22=5
-// 20=6
-// 15=7
-// 10=8
-// area=12
-// populationpercentage=15
+
