@@ -14,6 +14,13 @@ import java.util.List;
  * @author Caelan Whitter
  */
 public class Importer {
+    
+    
+    //https://www.worldometers.info/geography/flags-of-the-world/
+//https://flagpedia.net/download/api
+    
+    
+    
     /**
      * Create private fields for every field of a City
      */
