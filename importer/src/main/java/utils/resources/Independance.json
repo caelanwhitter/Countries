@@ -1,0 +1,977 @@
+[
+  {
+    "Country": "Afghanistan",
+    "IndependenceDay": "August 19",
+    "Year": 1919
+  },
+  {
+    "Country": "Albania",
+    "IndependenceDay": "November 28",
+    "Year": 1912
+  },
+  {
+    "Country": "Algeria",
+    "IndependenceDay": "July 5",
+    "Year": 1962
+  },
+  {
+    "Country": "Andorra",
+    "IndependenceDay": "September 8",
+    "Year": 1278
+  },
+  {
+    "Country": "Angola",
+    "IndependenceDay": "November 11",
+    "Year": 1975
+  },
+  {
+    "Country": "Antigua and Barbuda",
+    "IndependenceDay": "November 1",
+    "Year": 1981
+  },
+  {
+    "Country": "Argentina",
+    "IndependenceDay": "July 9",
+    "Year": 1816
+  },
+  {
+    "Country": "Armenia",
+    "IndependenceDay": "September 21",
+    "Year": 1991
+  },
+  {
+    "Country": "Australia",
+    "IndependenceDay": "January 26",
+    "Year": 1788
+  },
+  {
+    "Country": "Austria",
+    "IndependenceDay": "October 26",
+    "Year": 1955
+  },
+  {
+    "Country": "Azerbaijan",
+    "IndependenceDay": "October 18",
+    "Year": 1991
+  },
+  {
+    "Country": "Bahamas",
+    "IndependenceDay": "July 10",
+    "Year": 1973
+  },
+  {
+    "Country": "Bahrain",
+    "IndependenceDay": "December 16",
+    "Year": 1971
+  },
+  {
+    "Country": "Bangladesh",
+    "IndependenceDay": "March 26",
+    "Year": 1971
+  },
+  {
+    "Country": "Barbados",
+    "IndependenceDay": "November 30",
+    "Year": 1966
+  },
+  {
+    "Country": "Belarus",
+    "IndependenceDay": "July 3",
+    "Year": 1944
+  },
+  {
+    "Country": "Belgium",
+    "IndependenceDay": "October 4",
+    "Year": 1830
+  },
+  {
+    "Country": "Belize",
+    "IndependenceDay": "September 21",
+    "Year": 1981
+  },
+  {
+    "Country": "Benin",
+    "IndependenceDay": "August 1",
+    "Year": 1960
+  },
+  {
+    "Country": "Bhutan",
+    "IndependenceDay": "December 17",
+    "Year": 1907
+  },
+  {
+    "Country": "Bolivia",
+    "IndependenceDay": "August 6",
+    "Year": 1825
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "IndependenceDay": "March 1",
+    "Year": 1992
+  },
+  {
+    "Country": "Botswana",
+    "IndependenceDay": "September 30",
+    "Year": 1966
+  },
+  {
+    "Country": "Brazil",
+    "IndependenceDay": "September 7",
+    "Year": 1822
+  },
+  {
+    "Country": "Brunei",
+    "IndependenceDay": "January 1",
+    "Year": 1984
+  },
+  {
+    "Country": "Bulgaria",
+    "IndependenceDay": "March 3",
+    "Year": 1878
+  },
+  {
+    "Country": "Burkina Faso",
+    "IndependenceDay": "August 5",
+    "Year": 1960
+  },
+  {
+    "Country": "Burundi",
+    "IndependenceDay": "July 1",
+    "Year": null
+  },
+  {
+    "Country": "Cabo Verde",
+    "IndependenceDay": "July 5",
+    "Year": 1975
+  },
+  {
+    "Country": "Cambodia",
+    "IndependenceDay": "November 9",
+    "Year": 1953
+  },
+  {
+    "Country": "Cameroon",
+    "IndependenceDay": "January 1",
+    "Year": 1960
+  },
+  {
+    "Country": "Canada",
+    "IndependenceDay": "July 1",
+    "Year": 1867
+  },
+  {
+    "Country": "Central African Republic",
+    "IndependenceDay": "August 13",
+    "Year": 1960
+  },
+  {
+    "Country": "Chad",
+    "IndependenceDay": "August 11",
+    "Year": 1960
+  },
+  {
+    "Country": "Chile",
+    "IndependenceDay": "September 18",
+    "Year": 1818
+  },
+  {
+    "Country": "China",
+    "IndependenceDay": "October 1",
+    "Year": 1949
+  },
+  {
+    "Country": "Colombia",
+    "IndependenceDay": "July 20",
+    "Year": 1810
+  },
+  {
+    "Country": "Comoros",
+    "IndependenceDay": "July 6",
+    "Year": 1975
+  },
+  {
+    "Country": "Congo (Brazzaville)",
+    "IndependenceDay": "August 15",
+    "Year": 1960
+  },
+  {
+    "Country": "Congo (Kinshasa)",
+    "IndependenceDay": "June 30",
+    "Year": 1960
+  },
+  {
+    "Country": "Costa Rica",
+    "IndependenceDay": "September 15",
+    "Year": 1821
+  },
+  {
+    "Country": "Croatia",
+    "IndependenceDay": "June 25",
+    "Year": 1991
+  },
+  {
+    "Country": "Cuba",
+    "IndependenceDay": "January 1",
+    "Year": 1959
+  },
+  {
+    "Country": "Cyprus",
+    "IndependenceDay": "October 1",
+    "Year": 1960
+  },
+  {
+    "Country": "Czech Republic",
+    "IndependenceDay": "January 1",
+    "Year": 1993
+  },
+  {
+    "Country": "Denmark",
+    "IndependenceDay": "June 5",
+    "Year": null
+  },
+  {
+    "Country": "Djibouti",
+    "IndependenceDay": "June 27",
+    "Year": 1977
+  },
+  {
+    "Country": "Dominica",
+    "IndependenceDay": "November 3",
+    "Year": 1978
+  },
+  {
+    "Country": "Dominican Republic",
+    "IndependenceDay": "February 27",
+    "Year": 1844
+  },
+  {
+    "Country": "East Timor",
+    "IndependenceDay": "May 20",
+    "Year": 2002
+  },
+  {
+    "Country": "Ecuador",
+    "IndependenceDay": "May 24",
+    "Year": 1822
+  },
+  {
+    "Country": "Egypt",
+    "IndependenceDay": "July 23",
+    "Year": 1952
+  },
+  {
+    "Country": "El Salvador",
+    "IndependenceDay": "September 15",
+    "Year": 1821
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "IndependenceDay": "October 12",
+    "Year": 1968
+  },
+  {
+    "Country": "Eritrea",
+    "IndependenceDay": "May 24",
+    "Year": 1993
+  },
+  {
+    "Country": "Estonia",
+    "IndependenceDay": "February 24",
+    "Year": 1918
+  },
+  {
+    "Country": "Eswatini",
+    "IndependenceDay": "September 6",
+    "Year": 1968
+  },
+  {
+    "Country": "Ethiopia",
+    "IndependenceDay": "May 5",
+    "Year": null
+  },
+  {
+    "Country": "Fiji",
+    "IndependenceDay": "October 10",
+    "Year": 1970
+  },
+  {
+    "Country": "Finland",
+    "IndependenceDay": "December 6",
+    "Year": 1917
+  },
+  {
+    "Country": "France",
+    "IndependenceDay": "July 14",
+    "Year": null
+  },
+  {
+    "Country": "Gabon",
+    "IndependenceDay": "August 17",
+    "Year": 1960
+  },
+  {
+    "Country": "Gambia",
+    "IndependenceDay": "February 18",
+    "Year": 1965
+  },
+  {
+    "Country": "Georgia",
+    "IndependenceDay": "May 26",
+    "Year": 1918
+  },
+  {
+    "Country": "Germany",
+    "IndependenceDay": "October 3",
+    "Year": 1990
+  },
+  {
+    "Country": "Ghana",
+    "IndependenceDay": "March 6",
+    "Year": 1957
+  },
+  {
+    "Country": "Greece",
+    "IndependenceDay": "March 25",
+    "Year": 1821
+  },
+  {
+    "Country": "Grenada",
+    "IndependenceDay": "February 7",
+    "Year": 1974
+  },
+  {
+    "Country": "Guatemala",
+    "IndependenceDay": "September 15",
+    "Year": 1821
+  },
+  {
+    "Country": "Guinea",
+    "IndependenceDay": "October 2",
+    "Year": 1958
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "IndependenceDay": "September 24",
+    "Year": 1973
+  },
+  {
+    "Country": "Guyana",
+    "IndependenceDay": "May 26",
+    "Year": 1966
+  },
+  {
+    "Country": "Haiti",
+    "IndependenceDay": "January 1",
+    "Year": 1804
+  },
+  {
+    "Country": "Honduras",
+    "IndependenceDay": "September 15",
+    "Year": 1821
+  },
+  {
+    "Country": "Hungary",
+    "IndependenceDay": "October 23",
+    "Year": 1989
+  },
+  {
+    "Country": "Iceland",
+    "IndependenceDay": "June 17",
+    "Year": 1944
+  },
+  {
+    "Country": "India",
+    "IndependenceDay": "August 15",
+    "Year": 1947
+  },
+  {
+    "Country": "Indonesia",
+    "IndependenceDay": "August 17",
+    "Year": 1945
+  },
+  {
+    "Country": "Iran",
+    "IndependenceDay": "April 1",
+    "Year": 1979
+  },
+  {
+    "Country": "Iraq",
+    "IndependenceDay": "October 3",
+    "Year": 1932
+  },
+  {
+    "Country": "Ireland",
+    "IndependenceDay": "April 24",
+    "Year": 1916
+  },
+  {
+    "Country": "Israel",
+    "IndependenceDay": "May 14",
+    "Year": 1948
+  },
+  {
+    "Country": "Italy",
+    "IndependenceDay": "March 17",
+    "Year": 1861
+  },
+  {
+    "Country": "Jamaica",
+    "IndependenceDay": "August 6",
+    "Year": 1962
+  },
+  {
+    "Country": "Japan",
+    "IndependenceDay": "February 11",
+    "Year": null
+  },
+  {
+    "Country": "Jordan",
+    "IndependenceDay": "May 25",
+    "Year": 1946
+  },
+  {
+    "Country": "Kazakhstan",
+    "IndependenceDay": "December 16",
+    "Year": 1991
+  },
+  {
+    "Country": "Kenya",
+    "IndependenceDay": "December 12",
+    "Year": 1963
+  },
+  {
+    "Country": "Kiribati",
+    "IndependenceDay": "July 12",
+    "Year": 1979
+  },
+  {
+    "Country": "Korea, North",
+    "IndependenceDay": "August 15",
+    "Year": 1945
+  },
+  {
+    "Country": "Korea, South",
+    "IndependenceDay": "August 15",
+    "Year": 1945
+  },
+  {
+    "Country": "Kosovo",
+    "IndependenceDay": "February 17",
+    "Year": 2008
+  },
+  {
+    "Country": "Kuwait",
+    "IndependenceDay": "June 19",
+    "Year": 1961
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "IndependenceDay": "August 31",
+    "Year": 1991
+  },
+  {
+    "Country": "Laos",
+    "IndependenceDay": "July 19",
+    "Year": 1949
+  },
+  {
+    "Country": "Latvia",
+    "IndependenceDay": "November 18",
+    "Year": 1918
+  },
+  {
+    "Country": "Lebanon",
+    "IndependenceDay": "November 22",
+    "Year": 1943
+  },
+  {
+    "Country": "Lesotho",
+    "IndependenceDay": "October 4",
+    "Year": 1966
+  },
+  {
+    "Country": "Liberia",
+    "IndependenceDay": "July 26",
+    "Year": 1847
+  },
+  {
+    "Country": "Libya",
+    "IndependenceDay": "December 24",
+    "Year": 1951
+  },
+  {
+    "Country": "Liechtenstein",
+    "IndependenceDay": "January 23",
+    "Year": 1719
+  },
+  {
+    "Country": "Lithuania",
+    "IndependenceDay": "February 16",
+    "Year": 1918
+  },
+  {
+    "Country": "Luxembourg",
+    "IndependenceDay": "June 23",
+    "Year": null
+  },
+  {
+    "Country": "Madagascar",
+    "IndependenceDay": "June 26",
+    "Year": 1960
+  },
+  {
+    "Country": "Malawi",
+    "IndependenceDay": "July 6",
+    "Year": 1964
+  },
+  {
+    "Country": "Malaysia",
+    "IndependenceDay": "August 31",
+    "Year": 1957
+  },
+  {
+    "Country": "Maldives",
+    "IndependenceDay": "July 26",
+    "Year": 1965
+  },
+  {
+    "Country": "Mali",
+    "IndependenceDay": "September 22",
+    "Year": 1960
+  },
+  {
+    "Country": "Malta",
+    "IndependenceDay": "September 21",
+    "Year": 1964
+  },
+  {
+    "Country": "Marshall Islands",
+    "IndependenceDay": "October 21",
+    "Year": 1986
+  },
+  {
+    "Country": "Mauritania",
+    "IndependenceDay": "November 28",
+    "Year": 1960
+  },
+  {
+    "Country": "Mauritius",
+    "IndependenceDay": "March 12",
+    "Year": 1968
+  },
+  {
+    "Country": "Mexico",
+    "IndependenceDay": "September 16",
+    "Year": 1810
+  },
+  {
+    "Country": "Micronesia",
+    "IndependenceDay": "November 3",
+    "Year": 1986
+  },
+  {
+    "Country": "Moldova",
+    "IndependenceDay": "August 27",
+    "Year": 1991
+  },
+  {
+    "Country": "Monaco",
+    "IndependenceDay": "November 19",
+    "Year": 1297
+  },
+  {
+    "Country": "Mongolia",
+    "IndependenceDay": "July 11",
+    "Year": 1921
+  },
+  {
+    "Country": "Montenegro",
+    "IndependenceDay": "June 3",
+    "Year": 2006
+  },
+  {
+    "Country": "Morocco",
+    "IndependenceDay": "November 18",
+    "Year": 1956
+  },
+  {
+    "Country": "Mozambique",
+    "IndependenceDay": "June 25",
+    "Year": 1975
+  },
+  {
+    "Country": "Namibia",
+    "IndependenceDay": "March 21",
+    "Year": 1990
+  },
+  {
+    "Country": "Nauru",
+    "IndependenceDay": "January 31",
+    "Year": 1968
+  },
+  {
+    "Country": "Nepal",
+    "IndependenceDay": "September 20",
+    "Year": null
+  },
+  {
+    "Country": "Netherlands",
+    "IndependenceDay": "December 15",
+    "Year": null
+  },
+  {
+    "Country": "New Zealand",
+    "IndependenceDay": "February 6",
+    "Year": null
+  },
+  {
+    "Country": "Nicaragua",
+    "IndependenceDay": "September 15",
+    "Year": 1821
+  },
+  {
+    "Country": "Niger",
+    "IndependenceDay": "August 3",
+    "Year": 1960
+  },
+  {
+    "Country": "Nigeria",
+    "IndependenceDay": "October 1",
+    "Year": 1960
+  },
+  {
+    "Country": "North Macedonia",
+    "IndependenceDay": "September 8",
+    "Year": 1991
+  },
+  {
+    "Country": "Norway",
+    "IndependenceDay": "May 17",
+    "Year": 1814
+  },
+  {
+    "Country": "Oman",
+    "IndependenceDay": "November 18",
+    "Year": 1650
+  },
+  {
+    "Country": "Pakistan",
+    "IndependenceDay": "August 14",
+    "Year": 1947
+  },
+  {
+    "Country": "Palau",
+    "IndependenceDay": "October 1",
+    "Year": 1994
+  },
+  {
+    "Country": "Panama",
+    "IndependenceDay": "November 3",
+    "Year": 1903
+  },
+  {
+    "Country": "Papua New Guinea",
+    "IndependenceDay": "September 16",
+    "Year": 1975
+  },
+  {
+    "Country": "Paraguay",
+    "IndependenceDay": "May 14",
+    "Year": 1811
+  },
+  {
+    "Country": "Peru",
+    "IndependenceDay": "July 28",
+    "Year": 1821
+  },
+  {
+    "Country": "Philippines",
+    "IndependenceDay": "June 12",
+    "Year": 1898
+  },
+  {
+    "Country": "Poland",
+    "IndependenceDay": "November 11",
+    "Year": 1918
+  },
+  {
+    "Country": "Portugal",
+    "IndependenceDay": "December 1",
+    "Year": 1640
+  },
+  {
+    "Country": "Qatar",
+    "IndependenceDay": "September 3",
+    "Year": 1971
+  },
+  {
+    "Country": "Romania",
+    "IndependenceDay": "December 1",
+    "Year": 1918
+  },
+  {
+    "Country": "Russia",
+    "IndependenceDay": "June 12",
+    "Year": 1990
+  },
+  {
+    "Country": "Rwanda",
+    "IndependenceDay": "July 1",
+    "Year": 1962
+  },
+  {
+    "Country": "Saint Kitts and Nevis",
+    "IndependenceDay": "September 19",
+    "Year": 1983
+  },
+  {
+    "Country": "Saint Lucia",
+    "IndependenceDay": "February 22",
+    "Year": 1979
+  },
+  {
+    "Country": "Saint Vincent and the Grenadines",
+    "IndependenceDay": "October 27",
+    "Year": 1979
+  },
+  {
+    "Country": "Samoa",
+    "IndependenceDay": "June 1",
+    "Year": 1962
+  },
+  {
+    "Country": "San Marino",
+    "IndependenceDay": "September 3",
+    "Year": 301
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "IndependenceDay": "July 12",
+    "Year": 1975
+  },
+  {
+    "Country": "Saudi Arabia",
+    "IndependenceDay": "September 23",
+    "Year": 1932
+  },
+  {
+    "Country": "Senegal",
+    "IndependenceDay": "April 4",
+    "Year": 1960
+  },
+  {
+    "Country": "Serbia",
+    "IndependenceDay": "February 15",
+    "Year": 2006
+  },
+  {
+    "Country": "Seychelles",
+    "IndependenceDay": "June 29",
+    "Year": 1976
+  },
+  {
+    "Country": "Sierra Leone",
+    "IndependenceDay": "April 27",
+    "Year": 1961
+  },
+  {
+    "Country": "Singapore",
+    "IndependenceDay": "August 9",
+    "Year": 1965
+  },
+  {
+    "Country": "Slovakia",
+    "IndependenceDay": "January 1",
+    "Year": 1993
+  },
+  {
+    "Country": "Slovenia",
+    "IndependenceDay": "June 25",
+    "Year": 1991
+  },
+  {
+    "Country": "Solomon Islands",
+    "IndependenceDay": "July 7",
+    "Year": 1978
+  },
+  {
+    "Country": "Somalia",
+    "IndependenceDay": "July 1",
+    "Year": 1960
+  },
+  {
+    "Country": "South Africa",
+    "IndependenceDay": "April 27",
+    "Year": 1994
+  },
+  {
+    "Country": "South Sudan",
+    "IndependenceDay": "July 9",
+    "Year": 2011
+  },
+  {
+    "Country": "Spain",
+    "IndependenceDay": "October 12",
+    "Year": null
+  },
+  {
+    "Country": "Sri Lanka",
+    "IndependenceDay": "February 4",
+    "Year": 1948
+  },
+  {
+    "Country": "Sudan",
+    "IndependenceDay": "January 1",
+    "Year": 1956
+  },
+  {
+    "Country": "Suriname",
+    "IndependenceDay": "November 25",
+    "Year": 1975
+  },
+  {
+    "Country": "Sweden",
+    "IndependenceDay": "June 6",
+    "Year": 1523
+  },
+  {
+    "Country": "Switzerland",
+    "IndependenceDay": "August 1",
+    "Year": 1291
+  },
+  {
+    "Country": "Syria",
+    "IndependenceDay": "April 17",
+    "Year": 1946
+  },
+  {
+    "Country": "Taiwan",
+    "IndependenceDay": null,
+    "Year": null
+  },
+  {
+    "Country": "Tajikistan",
+    "IndependenceDay": "September 9",
+    "Year": 1991
+  },
+  {
+    "Country": "Tanzania",
+    "IndependenceDay": "December 9",
+    "Year": 1961
+  },
+  {
+    "Country": "Thailand",
+    "IndependenceDay": "December 5",
+    "Year": 1932
+  },
+  {
+    "Country": "Timor-Leste",
+    "IndependenceDay": "May 20",
+    "Year": 2002
+  },
+  {
+    "Country": "Togo",
+    "IndependenceDay": "April 27",
+    "Year": 1960
+  },
+  {
+    "Country": "Tonga",
+    "IndependenceDay": "June 4",
+    "Year": 1970
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "IndependenceDay": "August 31",
+    "Year": 1962
+  },
+  {
+    "Country": "Tunisia",
+    "IndependenceDay": "March 20",
+    "Year": 1956
+  },
+  {
+    "Country": "Turkey",
+    "IndependenceDay": "October 29",
+    "Year": 1923
+  },
+  {
+    "Country": "Turkmenistan",
+    "IndependenceDay": "October 27",
+    "Year": 1991
+  },
+  {
+    "Country": "Tuvalu",
+    "IndependenceDay": "October 1",
+    "Year": 1978
+  },
+  {
+    "Country": "Uganda",
+    "IndependenceDay": "October 9",
+    "Year": 1962
+  },
+  {
+    "Country": "Ukraine",
+    "IndependenceDay": "August 24",
+    "Year": 1991
+  },
+  {
+    "Country": "United Arab Emirates",
+    "IndependenceDay": "December 2",
+    "Year": 1971
+  },
+  {
+    "Country": "United Kingdom",
+    "IndependenceDay": null,
+    "Year": null
+  },
+  {
+    "Country": "United States",
+    "IndependenceDay": "July 4",
+    "Year": 1776
+  },
+  {
+    "Country": "Uruguay",
+    "IndependenceDay": "August 25",
+    "Year": 1825
+  },
+  {
+    "Country": "Uzbekistan",
+    "IndependenceDay": "September 1",
+    "Year": 1991
+  },
+  {
+    "Country": "Vanuatu",
+    "IndependenceDay": "July 30",
+    "Year": 1980
+  },
+  {
+    "Country": "Vatican City",
+    "IndependenceDay": "February 11",
+    "Year": 1929
+  },
+  {
+    "Country": "Venezuela",
+    "IndependenceDay": "July 5",
+    "Year": 1811
+  },
+  {
+    "Country": "Vietnam",
+    "IndependenceDay": "September 2",
+    "Year": 1945
+  },
+  {
+    "Country": "Yemen",
+    "IndependenceDay": "November 30",
+    "Year": 1967
+  },
+  {
+    "Country": "Zambia",
+    "IndependenceDay": "October 24",
+    "Year": 1964
+  },
+  {
+    "Country": "Zimbabwe",
+    "IndependenceDay": "April 18",
+    "Year": 1980
+  }
+]
