@@ -1,7 +1,7 @@
 package utils;
 
 import java.util.*;
-//https://www.worldometers.info/geography/flags-of-the-world/
+
 public class Country {
     private String name, capital, currency, currencyName, currencySymbol, region, latitude, longitude, population22, population20, population15, population10;
      private List<States> states;
