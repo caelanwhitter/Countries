@@ -1,9 +1,8 @@
 package utils;
-
+//States. provinces, territory, districts, divisions, municipalities, regions, departments, cities, governorate, dependency, prefecture, canton, islands 
 public class States {
     private String name, country, type, latitude, longitude;
-    // private List<States> states;
-    // private List<Cities>;
+
 
     public States() {
 		this.name = "Unknown";
