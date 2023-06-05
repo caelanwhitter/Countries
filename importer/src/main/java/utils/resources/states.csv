@@ -1362,12 +1362,12 @@ id,name,country_id,country_code,country_name,state_code,type,latitude,longitude
 2729,"Ogooué-Lolo Province",79,GA,Gabon,7,,-0.88440930,12.43805810
 2728,"Ogooué-Maritime Province",79,GA,Gabon,8,,-1.34659750,9.72326730
 2723,"Woleu-Ntem Province",79,GA,Gabon,9,,2.29898270,11.44669140
-2666,Banjul,80,GM,"Gambia The",B,,13.45487610,-16.57903230
-2669,"Central River Division",80,GM,"Gambia The",M,,13.59944690,-14.89216680
-2670,"Lower River Division",80,GM,"Gambia The",L,,13.35533060,-15.92299000
-2671,"North Bank Division",80,GM,"Gambia The",N,,13.52854360,-16.01699710
-2668,"Upper River Division",80,GM,"Gambia The",U,,13.42573660,-14.00723480
-2667,"West Coast Division",80,GM,"Gambia The",W,,5.97727980,116.07542880
+2666,Banjul,80,GM,"Gambia",B,,13.45487610,-16.57903230
+2669,"Central River Division",80,GM,"Gambia",M,,13.59944690,-14.89216680
+2670,"Lower River Division",80,GM,"Gambia",L,,13.35533060,-15.92299000
+2671,"North Bank Division",80,GM,"Gambia",N,,13.52854360,-16.01699710
+2668,"Upper River Division",80,GM,"Gambia",U,,13.42573660,-14.00723480
+2667,"West Coast Division",80,GM,"Gambia",W,,5.97727980,116.07542880
 900,Adjara,81,GE,Georgia,AJ,,41.60056260,42.06883830
 901,"Autonomous Republic of Abkhazia",81,GE,Georgia,AB,,43.00155440,41.02340700
 907,Guria,81,GE,Georgia,GU,,41.94427360,42.04580910
