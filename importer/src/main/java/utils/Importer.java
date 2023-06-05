@@ -148,11 +148,7 @@ public class Importer {
                     }
                     else{
 
-                    // System.out.println(stateAttributes[1] + ", " + stateAttributes[4] + ", " + stateAttributes[6] + ", " + stateAttributes[7] + ", "
-                    //         + stateAttributes[8]);
-                    /**
-                     * Set name, country name, type, longitude and latitude 
-                     */
+             
                     states.setName(stateAttributes[1]);
                     states.setCountry(stateAttributes[4]);
                     states.setType(stateAttributes[6]);
@@ -187,11 +183,7 @@ public class Importer {
                 Country countries = new Country();
 
                 String[] countryAttributes = line.split(splitby);
-                // System.out.println(countryAttributes[1] + ", " + countryAttributes[6] + ", " + countryAttributes[7] + ", " + countryAttributes[8] +
-                // ", " + countryAttributes[9] + ", " + countryAttributes[12] + ", " + countryAttributes[15] + ", " + countryAttributes[16]);
-                /**
-                 * Set name, capital,currency, currency name, currency symbol, region, longitude and latitude
-                 */
+             
                 
                 names.add(countryAttributes[1]);
                 
@@ -200,6 +192,7 @@ public class Importer {
                 countries.setCurrency(countryAttributes[7]);
                 countries.setCurrencyName(countryAttributes[8]);
                 countries.setCurrencySymbol(countryAttributes[9]);
+                countries.setCountryCode(countryAttributes[3]);
                 countries.setRegion(countryAttributes[12]);
                 countries.setLongitude(countryAttributes[15]);
                 countries.setLatitude(countryAttributes[16]);
