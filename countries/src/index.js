@@ -14,7 +14,7 @@ render(
     <Navbar />
     <div id="mainContent">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Countries />} />
       </Routes>
       <Footer />
     </div>
