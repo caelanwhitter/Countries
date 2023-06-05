@@ -48,14 +48,11 @@ public class MongoDB {
                 MongoDatabase database = client.getDatabase(DATABASE_NAME);
                 MongoCollection<Country> countries = database.getCollection(COLLECTION_NAME, Country.class);
         
-                Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv","importer/src/main/java/utils/resources/states.csv",
-                "importer/src/main/java/utils/resources/countries.csv","importer/src/main/java/utils/resources/world_population.csv");
+              //  Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv","importer/src/main/java/utils/resources/states.csv",
+             //   "importer/src/main/java/utils/resources/countries.csv","importer/src/main/java/utils/resources/world_population.csv");
                 
-               // ImporterCities importerCity = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
-                //ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
-                //ImporterStates importerState = new ImporterStates("importer/src/main/java/utils/resources/states.csv");
-                //ImporterPop importerPop = new ImporterPop("importer/src/main/java/utils/resources/world_population.csv");
-                List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
+          
+                //List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
                 
                
                 // for (Object c : countryList) {
@@ -68,12 +65,3 @@ public class MongoDB {
             }
         }
 
-// country=2
-// continent=4
-// 22=5
-// 20=6
-// 15=7
-// 10=8
-// area=12
-// populationpercentage=15
-        

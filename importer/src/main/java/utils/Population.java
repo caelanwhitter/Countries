@@ -3,7 +3,7 @@ package utils;
 import java.util.*;
 
 public class Population {
-    private String country, continent,area, population22, population20, population15, population10, area, populationPercent;
+    private String country, continent,area, population22, population20, population15, population10, populationPercent;
 
 
     public Population() {

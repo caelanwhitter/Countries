@@ -170,7 +170,7 @@ public class Importer {
     }
     
     public void pickDataCountry(BufferedReader reader) throws IOException {
-     try {
+        try {
             boolean firstLine = true;
             while ((line = reader.readLine()) != null) {
                 /**
@@ -183,10 +183,9 @@ public class Importer {
                 Country countries = new Country();
 
                 String[] countryAttributes = line.split(splitby);
-             
-                
+
                 names.add(countryAttributes[1]);
-                
+
                 countries.setName(countryAttributes[1]);
                 countries.setCapital(countryAttributes[6]);
                 countries.setCurrency(countryAttributes[7]);
@@ -207,6 +206,7 @@ public class Importer {
         } finally {
             reader.close();
         }
+    }
         
          public void pickDataPopulation(BufferedReader reader) throws IOException {
      try {
