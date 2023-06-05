@@ -225,11 +225,14 @@ public class Importer {
                
                   
      
-                population.setName(countryAttributes[1]);
-                population.setCapital(countryAttributes[6]);
-                population.setCurrency(countryAttributes[7]);
-                population.setCurrencyName(countryAttributes[8]);
-                population.setCurrencySymbol(countryAttributes[9]);
+                population.setCountry(populationAttributes[2]);
+                population.setContinent(populationAttributes[4]);
+                population.setArea(populationAttributes[13]);
+                population.setPopulationPercent(populationAttributes[16]);
+                population.setPopulation22(populationAttributes[5]);
+                population.setPopulation20(populationAttributes[6]);
+                population.setPopulation15(populationAttributes[7]);
+                population.setPopulation10(populationAttributes[8]);
 
                 /* Add Populations into list */
                 populationList.add(population);
