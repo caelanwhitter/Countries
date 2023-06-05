@@ -35,6 +35,7 @@ public class Importer {
     private List<Cities> cityList = new ArrayList<Cities>();
     private List<States> stateList = new ArrayList<States>();
     private List<Country> countryList = new ArrayList<Country>();
+    private List<Population> populationList = new ArrayList<Population>();
     
     private List<String> names = new ArrayList<String>();
 
@@ -205,6 +206,40 @@ public class Importer {
 
                 /* Add Countries into list */
                 countryList.add(countries);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            reader.close();
+        }
+        
+         public void pickDataPopulation(BufferedReader reader) throws IOException {
+     try {
+            boolean firstLine = true;
+            while ((line = reader.readLine()) != null) {
+                /**
+                 * Skip the first line of the csv file
+                 */
+                if (firstLine) {
+                    firstLine = false;
+                    continue;
+                }
+                Population population = new Population();
+
+                String[] populationAttributes = line.split(splitby);
+               
+                  
+     
+                population.setName(countryAttributes[1]);
+                population.setCapital(countryAttributes[6]);
+                population.setCurrency(countryAttributes[7]);
+                population.setCurrencyName(countryAttributes[8]);
+                population.setCurrencySymbol(countryAttributes[9]);
+
+                /* Add Populations into list */
+                populationList.add(population);
 
             }
 
