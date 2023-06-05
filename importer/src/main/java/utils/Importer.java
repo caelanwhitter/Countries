@@ -51,6 +51,7 @@ public class Importer {
 
     public List<List<? extends Object>> fetchDataFromDataset() throws IOException {
 
+        System.out.println(this.stateAttributesPath);
 
         /**
          * a try-catch method to extract data from csv file
@@ -60,9 +61,9 @@ public class Importer {
         BufferedReader state = fileReader(stateAttributesPath);
         BufferedReader population = fileReader(populationAttributesPath);
         
-        // pickDataCountry(country);
+         pickDataCountry(country);
         //pickDataCity(city);
-        pickDataState(state);
+        //pickDataState(state);
         //pickDataPopulation(population);
         
         return  Arrays.asList(cityList, stateList, countryList);
@@ -91,8 +92,7 @@ public class Importer {
                 Cities cities = new Cities();
 
                 String[] cityAttributes = line.split(this.splitby);
-                // System.out.println(cityAttributes[1] + ", " + cityAttributes[7] + ", " + cityAttributes[8] + ", "
-                //         + cityAttributes[9]);
+               
                 /**
                  * Set name, country, longitude and latitude
                  */
@@ -117,7 +117,8 @@ public class Importer {
   }
     
   public void pickDataState(BufferedReader reader) throws IOException {
-      int count = 0;
+   
+
            try {
             boolean firstLine = true;
             while ((line = reader.readLine()) != null) {
@@ -129,10 +130,12 @@ public class Importer {
                     continue;
                 }
                 
-                
+                //System.out.println("hello");
                
                 States states = new States();
                 String[] stateAttributes = line.split(splitby);
+                System.out.println(stateAttributes.length);
+
                 if(names.contains(stateAttributes[4])){
                     if (stateAttributes.length <= 6) {
 
@@ -155,7 +158,9 @@ public class Importer {
                     states.setLongitude(stateAttributes[7]);
                     states.setLatitude(stateAttributes[8]);
                     }
-                     /* Add Cities into list */
+                    /* Add Cities into list */
+                     
+
                 stateList.add(states);
                 }
                 
@@ -196,6 +201,7 @@ public class Importer {
                 countries.setLongitude(countryAttributes[15]);
                 countries.setLatitude(countryAttributes[16]);
 
+                //System.out.println(countries);
                 /* Add Countries into list */
                 countryList.add(countries);
 

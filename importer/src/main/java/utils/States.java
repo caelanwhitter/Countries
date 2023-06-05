@@ -75,7 +75,7 @@ public class States {
 
 	@Override
 	public String toString() {
-        return "Country: " + name + " | " + country + " | " + type + " | " + latitude + " | "+ longitude;
+        return name + " | " + country + " | " + type + " | " + latitude + " | "+ longitude;
 	}
 
 }

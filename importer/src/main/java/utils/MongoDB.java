@@ -29,8 +29,8 @@ public class MongoDB {
 
                 Dotenv dotenv = Dotenv.load();
                 final String ATLAS_URI = dotenv.get("ATLAS_URI");
-                final String DATABASE_NAME = "citydb";
-                final String COLLECTION_NAME = "cities";
+                final String DATABASE_NAME = "countrydb";
+                final String COLLECTION_NAME = "countries";
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "'...");
         
@@ -47,17 +47,27 @@ public class MongoDB {
         
                 MongoDatabase database = client.getDatabase(DATABASE_NAME);
                 MongoCollection<Country> countries = database.getCollection(COLLECTION_NAME, Country.class);
+                MongoCollection<States> states = database.getCollection(COLLECTION_NAME, States.class);
+                MongoCollection<Cities> cities = database.getCollection(COLLECTION_NAME, Cities.class);
+                MongoCollection<Population> population = database.getCollection(COLLECTION_NAME, Population.class);
+
         
-              //  Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv","importer/src/main/java/utils/resources/states.csv",
-             //   "importer/src/main/java/utils/resources/countries.csv","importer/src/main/java/utils/resources/world_population.csv");
+                Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv","importer/src/main/java/utils/resources/states.csv",
+                "importer/src/main/java/utils/resources/countries.csv","importer/src/main/java/utils/resources/world_population.csv");
                 
-          
-                //List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
-                
-               
-                // for (Object c : countryList) {
-                //         System.out.println(c);
-                // }
+                List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
+              
+                int count = 0;
+                for (List<? extends Object> c : countryList) {
+                        System.out.println(count);
+                        count++;
+                        if(count == 2)
+                        {
+                               
+                                countries.insertMany(c);
+                        }
+
+                }
                 
             
         
