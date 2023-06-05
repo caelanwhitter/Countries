@@ -59,10 +59,9 @@ public class Importer {
         BufferedReader state = fileReader(stateAttributesPath);
         BufferedReader population = fileReader(populationAttributesPath);
         
-        // pickDataCountry(country);
+        // pickDataCountry(country, population);
         //pickDataCity(city);
         pickDataState(state);
-        //pickDataPopulation(population);
         
         return  Arrays.asList(cityList, stateList, countryList);
     }
@@ -172,10 +171,10 @@ public class Importer {
         }
     }
     
-    public void pickDataCountry(BufferedReader reader) throws IOException {
+    public void pickDataCountry(BufferedReader readerCountry, BufferedReader readerPopulation) throws IOException {
      try {
             boolean firstLine = true;
-            while ((line = reader.readLine()) != null) {
+            while ((line = readerCountry.readLine()) != null) {
                 /**
                  * Skip the first line of the csv file
                  */
