@@ -3,7 +3,7 @@ package utils;
 import java.util.*;
 
 public class Country {
-    private String name, capital, currency, currencyName, currencySymbol, region, latitude, longitude, population22, population20, population15, population10;
+    private String name, capital, currency, currencyName, currencySymbol,countryCode, region, latitude, longitude, population22, population20, population15, population10;
      private List<States> states;
      private List<Cities> cities;
 
@@ -13,6 +13,7 @@ public class Country {
 		this.currency = "Unknown";
 	   	this.currencyName = "Unknown";
 	   	this.currencySymbol = "Unknown";
+	        this.countryCode = "Unknown";
 		this.region = "Unknown";
 		this.latitude = "Unknown";
 		this.longitude = "Unknown";
@@ -30,6 +31,7 @@ public class Country {
 	 * @param currency
 	 * @param currencyName
 	 * @param currencySymbol
+	 * @param countryCode
      	 * @param region
 	 * @param latitude
 	 * @param longitude
@@ -38,11 +40,12 @@ public class Country {
 	 * @param population15
 	 * @param population10
 	 */
-	public Country(String name, String capital,String region, String currency, String currencyName, String currencySymbol, String latitude,String longitude, String population22,
+	public Country(String name, String capital,String region, String currency,  String currencyName, String currencySymbol, String countryCode, String latitude,String longitude, String population22,
 			String population20, String population15, String population10) {
 		this.name = name;
 		this.capital = capital;
 		this.currency = currency;
+		this.countryCode = countryCode;
 		this.currency = currencyName;
 		this.currency = currencySymbol;
 		this.region = region;
@@ -92,6 +95,14 @@ public class Country {
 
 	public void setCurrencySymbol(String currencySymbol) {
 		this.currencySymbol = currencySymbol;
+	}
+	
+	public String getCountryCode() {
+		return countryCode;
+	}
+
+	public void setCountryCode(String countryCode) {
+		this.countryCode = countryCode;
 	}
 
 	public String getRegion() {

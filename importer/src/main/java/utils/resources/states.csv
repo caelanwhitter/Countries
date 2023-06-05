@@ -1362,12 +1362,12 @@ id,name,country_id,country_code,country_name,state_code,type,latitude,longitude
 2729,"Ogooué-Lolo Province",79,GA,Gabon,7,,-0.88440930,12.43805810
 2728,"Ogooué-Maritime Province",79,GA,Gabon,8,,-1.34659750,9.72326730
 2723,"Woleu-Ntem Province",79,GA,Gabon,9,,2.29898270,11.44669140
-2666,Banjul,80,GM,"Gambia The",B,,13.45487610,-16.57903230
-2669,"Central River Division",80,GM,"Gambia The",M,,13.59944690,-14.89216680
-2670,"Lower River Division",80,GM,"Gambia The",L,,13.35533060,-15.92299000
-2671,"North Bank Division",80,GM,"Gambia The",N,,13.52854360,-16.01699710
-2668,"Upper River Division",80,GM,"Gambia The",U,,13.42573660,-14.00723480
-2667,"West Coast Division",80,GM,"Gambia The",W,,5.97727980,116.07542880
+2666,Banjul,80,GM,"Gambia",B,,13.45487610,-16.57903230
+2669,"Central River Division",80,GM,"Gambia",M,,13.59944690,-14.89216680
+2670,"Lower River Division",80,GM,"Gambia",L,,13.35533060,-15.92299000
+2671,"North Bank Division",80,GM,"Gambia",N,,13.52854360,-16.01699710
+2668,"Upper River Division",80,GM,"Gambia",U,,13.42573660,-14.00723480
+2667,"West Coast Division",80,GM,"Gambia",W,,5.97727980,116.07542880
 900,Adjara,81,GE,Georgia,AJ,,41.60056260,42.06883830
 901,"Autonomous Republic of Abkhazia",81,GE,Georgia,AB,,43.00155440,41.02340700
 907,Guria,81,GE,Georgia,GU,,41.94427360,42.04580910
@@ -3052,22 +3052,22 @@ id,name,country_id,country_code,country_name,state_code,type,latitude,longitude
 4534,Ngiwal,168,PW,Palau,228,,7.56147640,134.61606190
 4526,Peleliu,168,PW,Palau,350,,7.00229060,134.24316280
 4535,Sonsorol,168,PW,Palau,370,,5.32681190,132.22391170
-5118,Bethlehem,169,PS,"Palestinian Territory Occupied",BTH,governorate,31.70539960,35.19368770
-5119,"Deir El Balah",169,PS,"Palestinian Territory Occupied",DEB,governorate,,
-5120,Gaza,169,PS,"Palestinian Territory Occupied",GZA,governorate,,
-5121,Hebron,169,PS,"Palestinian Territory Occupied",HBN,governorate,31.53260010,35.06394750
-5122,Jenin,169,PS,"Palestinian Territory Occupied",JEN,governorate,,
-5123,"Jericho and Al Aghwar",169,PS,"Palestinian Territory Occupied",JRH,governorate,,
-5124,Jerusalem,169,PS,"Palestinian Territory Occupied",JEM,governorate,,
-5125,"Khan Yunis",169,PS,"Palestinian Territory Occupied",KYS,governorate,,
-5126,Nablus,169,PS,"Palestinian Territory Occupied",NBS,governorate,,
-5127,"North Gaza",169,PS,"Palestinian Territory Occupied",NGZ,governorate,,
-5128,Qalqilya,169,PS,"Palestinian Territory Occupied",QQA,governorate,,
-5129,Rafah,169,PS,"Palestinian Territory Occupied",RFH,governorate,,
-5130,Ramallah,169,PS,"Palestinian Territory Occupied",RBH,governorate,,
-5131,Salfit,169,PS,"Palestinian Territory Occupied",SLT,governorate,,
-5132,Tubas,169,PS,"Palestinian Territory Occupied",TBS,governorate,,
-5133,Tulkarm,169,PS,"Palestinian Territory Occupied",TKM,governorate,,
+5118,Bethlehem,169,PS,"Palestine",BTH,governorate,31.70539960,35.19368770
+5119,"Deir El Balah",169,PS,"Palestine",DEB,governorate,,
+5120,Gaza,169,PS,"Palestine",GZA,governorate,,
+5121,Hebron,169,PS,"Palestine",HBN,governorate,31.53260010,35.06394750
+5122,Jenin,169,PS,"Palestine",JEN,governorate,,
+5123,"Jericho and Al Aghwar",169,PS,"Palestine",JRH,governorate,,
+5124,Jerusalem,169,PS,"Palestine",JEM,governorate,,
+5125,"Khan Yunis",169,PS,"Palestine",KYS,governorate,,
+5126,Nablus,169,PS,"Palestine",NBS,governorate,,
+5127,"North Gaza",169,PS,"Palestine",NGZ,governorate,,
+5128,Qalqilya,169,PS,"Palestine",QQA,governorate,,
+5129,Rafah,169,PS,"Palestine",RFH,governorate,,
+5130,Ramallah,169,PS,"Palestine",RBH,governorate,,
+5131,Salfit,169,PS,"Palestine",SLT,governorate,,
+5132,Tubas,169,PS,"Palestine",TBS,governorate,,
+5133,Tulkarm,169,PS,"Palestine",TKM,governorate,,
 1393,"Bocas del Toro Province",170,PA,Panama,1,,9.41655210,-82.52077870
 1397,"Chiriquí Province",170,PA,Panama,4,,8.58489800,-82.38857830
 1387,"Coclé Province",170,PA,Panama,2,,8.62660680,-80.36586500
