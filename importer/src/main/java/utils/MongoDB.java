@@ -52,22 +52,10 @@ public class MongoDB {
                 MongoCollection<Population> population = database.getCollection(COLLECTION_NAME, Population.class);
 
         
-                Importer importer = new Importer("importer/src/main/java/utils/resources/cities.csv","importer/src/main/java/utils/resources/states.csv",
-                "importer/src/main/java/utils/resources/countries.csv","importer/src/main/java/utils/resources/world_population.csv");
-                
-                List<List<? extends Object>> countryList = importer.fetchDataFromDataset();
-              
-                int count = 0;
-                for (List<? extends Object> c : countryList) {
-                        System.out.println(count);
-                        count++;
-                        if(count == 2)
-                        {
-                               
-                                countries.insertMany(c);
-                        }
-
-                }
+                ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
+                ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv");
+                ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv");
+                ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
                 
             
         
