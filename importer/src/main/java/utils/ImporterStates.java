@@ -11,10 +11,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ImporterCities.java reads through every line of dataset
+ * ImporterStates.java reads through every line of dataset
  * @author Caelan Whitter
  */
-public class Importer {
+public class ImporterStates {
 
     /**
      * Create private fields for every field of a City
