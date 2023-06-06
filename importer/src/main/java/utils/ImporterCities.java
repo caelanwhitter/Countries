@@ -14,7 +14,7 @@ import java.util.List;
  * ImporterCities.java reads through every line of dataset
  * @author Caelan Whitter
  */
-public class Importer {
+public class ImporterCities {
     
     /**
      * Create private fields for every field of a City
