@@ -32,7 +32,7 @@ public class ImporterStates {
     /**
      * set the paths to the csv file
      */
-    public Importer(String pathCity, List<String> countries) {
+    public ImporterStates(String pathCity, List<String> countries) {
         this.stateAttributesPath = pathState;
       this.names = countries;
        
