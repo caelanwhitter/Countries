@@ -24,6 +24,11 @@ import io.github.cdimascio.dotenv.Dotenv;
  * 
  * @author Caelan Whitter
  */
+
+
+    //https://www.worldometers.info/geography/flags-of-the-world/
+//https://flagpedia.net/download/api
+
 public class MongoDB {
         public static void main( String[] args ) throws IOException {
 
