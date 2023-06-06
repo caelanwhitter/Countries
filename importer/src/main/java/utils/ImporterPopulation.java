@@ -29,7 +29,7 @@ public class ImporterPopulation {
     /**
      * set the paths to the csv file
      */
-    public Importer(String pathPopulation, List<String> countries) {
+    public ImporterPopulation(String pathPopulation, List<String> countries) {
 
         this.populationAttributesPath = pathPopulation;
       this.name = countries;
