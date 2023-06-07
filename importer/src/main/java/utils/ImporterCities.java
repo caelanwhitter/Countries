@@ -28,14 +28,13 @@ public class ImporterCities {
     private List<Cities> cityList = new ArrayList<Cities>();
 
     
-    private List<String> names = new ArrayList<String>();
-
+    List<String> countryNames = new ArrayList<String>();
     /**
      * set the paths to the csv file
      */
     public ImporterCities(String pathCity, List<String> countries ) {
         this.cityAttributesPath = pathCity;
-      this.names = countries;
+      this.countryNames = countryNames;
     }
 
     public List<Cities> fetchDataFromDataset() throws IOException {
@@ -81,7 +80,7 @@ public class ImporterCities {
                  * Set name, country, longitude and latitude
                  */
                 
-                if(names.contains(cityAttributes[7])){
+                if(countryNames.contains(cityAttributes[7])){
                 
                 cities.setName(cityAttributes[1]);
                 cities.setCountry(cityAttributes[7]);
