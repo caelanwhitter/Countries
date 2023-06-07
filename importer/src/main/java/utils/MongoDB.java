@@ -58,9 +58,16 @@ public class MongoDB {
 
         
                 ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
-                ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv");
-                ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv");
-                ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv");
+                List<String> countryNames = new ArrayList<String>();
+                for(int i =0; i< importerCountry.size(); i++)
+                {
+                    countrynames.add(importerCountry[i][0];)
+                }
+            
+            
+                ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
+                ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
+                ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv",countryNames);
                 
             
         
