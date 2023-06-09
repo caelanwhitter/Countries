@@ -28,13 +28,13 @@ public class ImporterCities {
     private List<Cities> cityList = new ArrayList<Cities>();
 
     
-    List<String> countryNames = new ArrayList<String>();
+    List<String> countryNames;
     /**
      * set the paths to the csv file
      */
     public ImporterCities(String pathCity, List<String> countries ) {
         this.cityAttributesPath = pathCity;
-      this.countryNames = countryNames;
+      this.countryNames = countries;
     }
 
     public List<Cities> fetchDataFromDataset() throws IOException {
