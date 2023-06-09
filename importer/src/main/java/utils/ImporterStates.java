@@ -27,14 +27,14 @@ public class ImporterStates {
     private List<States> stateList = new ArrayList<States>();
  
     
-    private List<String> names;
+    private List<String> countryNames;
 
     /**
      * set the paths to the csv file
      */
     public ImporterStates(String pathCity, List<String> countries) {
         this.stateAttributesPath = pathState;
-      this.names = countries;
+      this.countryNames = countries;
        
     }
 
@@ -82,7 +82,7 @@ public class ImporterStates {
                 String[] stateAttributes = line.split(splitby);
                 System.out.println(stateAttributes.length);
 
-                if(names.contains(stateAttributes[4])){
+                if(countryNames.contains(stateAttributes[4])){
                     if (stateAttributes.length <= 6) {
 
                         states.setName(stateAttributes[1]);
