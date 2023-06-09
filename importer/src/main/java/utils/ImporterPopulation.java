@@ -24,7 +24,8 @@ public class ImporterPopulation {
 
     private List<Population> populationList = new ArrayList<Population>();
     
-    private List<String> names = new ArrayList<String>();
+    private List<String> countryNames;
+
 
     /**
      * set the paths to the csv file
@@ -32,7 +33,7 @@ public class ImporterPopulation {
     public ImporterPopulation(String pathPopulation, List<String> countries) {
 
         this.populationAttributesPath = pathPopulation;
-      this.name = countries;
+      this.countryNames = countries;
     }
 
     public List<Population> fetchDataFromDataset() throws IOException {
