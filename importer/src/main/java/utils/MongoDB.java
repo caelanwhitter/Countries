@@ -20,7 +20,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 /**
  * MongoDB.java sets up initial connection to MongoDB database, creates Importer
- * and inserts movies into database
+ * and inserts countries into database
  * 
  * @author Caelan Whitter
  */
@@ -58,16 +58,30 @@ public class MongoDB {
 
         
                 ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
+                List<Country> countryList = importerCountry.fetchDataFromDataset();
+
                 List<String> countryNames = new ArrayList<String>();
-                for(int i =0; i< importerCountry.size(); i++)
+                for(int i =0; i< countryList.size(); i++)
                 {
                     countrynames.add(importerCountry[i][0];)
                 }
             
             
                 ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
+                List<Population> populationList = importerPopulation.fetchDataFromDataset();
+
                 ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
+                List<States> statesList = importerStates.fetchDataFromDataset();
+
                 ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv",countryNames);
+                List<Cities> citiesList = importerCities.fetchDataFromDataset();
+            
+            
+                countries.insertMany(countryList);
+                states.insertMany(statesList);
+                population.insertMany(populationList);
+                cities.insertMany(citiesList);
+
                 
             
         
