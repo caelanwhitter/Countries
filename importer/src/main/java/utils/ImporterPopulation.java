@@ -74,7 +74,7 @@ public class ImporterPopulation {
                 String[] populationAttributes = line.split(splitby);
                
                   
-     
+                if(countryNames.contains(populationAttributes[2])){
                 population.setCountry(populationAttributes[2]);
                 population.setContinent(populationAttributes[4]);
                 population.setArea(populationAttributes[13]);
@@ -86,7 +86,7 @@ public class ImporterPopulation {
 
                 /* Add Populations into list */
                 populationList.add(population);
-
+                }
             }
 
         } catch (IOException e) {
