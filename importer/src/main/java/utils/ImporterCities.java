@@ -32,9 +32,9 @@ public class ImporterCities {
     /**
      * set the paths to the csv file
      */
-    public ImporterCities(String pathCity, List<String> countries ) {
+    public ImporterCities(String pathCity, List<String> countryNames ) {
         this.cityAttributesPath = pathCity;
-      this.countryNames = countries;
+      this.countryNames = countryNames;
     }
 
     public List<Cities> fetchDataFromDataset() throws IOException {

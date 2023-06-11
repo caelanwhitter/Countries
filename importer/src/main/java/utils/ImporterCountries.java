@@ -29,10 +29,10 @@ public class ImporterCountries {
     /**
      * set the paths to the csv file
      */
-    public ImporterCountries(String pathCountry,List<String> countries) {
+    public ImporterCountries(String pathCountry) {
       
         this.countryAttributesPath = pathCountry;
-      this.name = countries; 
+      
     }
 
     public List<Country> fetchDataFromDataset() throws IOException {

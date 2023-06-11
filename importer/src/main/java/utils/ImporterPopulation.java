@@ -30,15 +30,15 @@ public class ImporterPopulation {
     /**
      * set the paths to the csv file
      */
-    public ImporterPopulation(String pathPopulation, List<String> countries) {
+    public ImporterPopulation(String pathPopulation, List<String> countryNames) {
 
         this.populationAttributesPath = pathPopulation;
-      this.countryNames = countries;
+      this.countryNames = countryNames;
     }
 
     public List<Population> fetchDataFromDataset() throws IOException {
 
-        System.out.println(this.stateAttributesPath);
+       
 
         /**
          * a try-catch method to extract data from csv file

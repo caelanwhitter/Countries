@@ -32,15 +32,15 @@ public class ImporterStates {
     /**
      * set the paths to the csv file
      */
-    public ImporterStates(String pathCity, List<String> countries) {
-        this.stateAttributesPath = pathState;
-      this.countryNames = countries;
+    public ImporterStates(String string, List<String> countryNames) {
+        this.stateAttributesPath = string;
+      this.countryNames = countryNames;
        
     }
 
     public List<States> fetchDataFromDataset() throws IOException {
 
-        System.out.println(this.stateAttributesPath);
+       
 
         /**
          * a try-catch method to extract data from csv file
@@ -76,11 +76,11 @@ public class ImporterStates {
                     continue;
                 }
                 
-                //System.out.println("hello");
+                
                
                 States states = new States();
                 String[] stateAttributes = line.split(splitby);
-                System.out.println(stateAttributes.length);
+         
 
                 if(countryNames.contains(stateAttributes[4])){
                     if (stateAttributes.length <= 6) {

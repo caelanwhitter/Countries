@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import org.bson.Document;
 import static com.mongodb.client.model.Filters.eq;
@@ -63,7 +64,7 @@ public class MongoDB {
                 List<String> countryNames = new ArrayList<String>();
                 for(int i =0; i< countryList.size(); i++)
                 {
-                    countrynames.add(importerCountry[i][0];)
+                        countryNames.add(countryList.get(i).getName());
                 }
             
             
