@@ -36,7 +36,10 @@ public class MongoDB {
                 Dotenv dotenv = Dotenv.load();
                 final String ATLAS_URI = dotenv.get("ATLAS_URI");
                 final String DATABASE_NAME = "countrydb";
-                final String COLLECTION_NAME = "countries";
+                final String COLLECTION_COUNTRIES = "countries";
+                final String COLLECTION_STATES = "states";
+                final String COLLECTION_CITIES = "cities";
+                final String COLLECTION_POPULATION = "population";
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "'...");
         
@@ -52,10 +55,10 @@ public class MongoDB {
                 MongoClient client = MongoClients.create(clientSettings);
         
                 MongoDatabase database = client.getDatabase(DATABASE_NAME);
-                MongoCollection<Country> countries = database.getCollection(COLLECTION_NAME, Country.class);
-                MongoCollection<States> states = database.getCollection(COLLECTION_NAME, States.class);
-                MongoCollection<Cities> cities = database.getCollection(COLLECTION_NAME, Cities.class);
-                MongoCollection<Population> population = database.getCollection(COLLECTION_NAME, Population.class);
+                MongoCollection<Country> countries = database.getCollection(COLLECTION_COUNTRIES, Country.class);
+                MongoCollection<States> states = database.getCollection(COLLECTION_STATES, States.class);
+                MongoCollection<Cities> cities = database.getCollection(COLLECTION_CITIES, Cities.class);
+                MongoCollection<Population> population = database.getCollection(COLLECTION_POPULATION, Population.class);
 
         
                 ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
@@ -68,19 +71,19 @@ public class MongoDB {
                 }
             
             
-                ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
-                List<Population> populationList = importerPopulation.fetchDataFromDataset();
+                // ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
+                // List<Population> populationList = importerPopulation.fetchDataFromDataset();
 
-                ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
-                List<States> statesList = importerStates.fetchDataFromDataset();
+                // ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
+                // List<States> statesList = importerStates.fetchDataFromDataset();
 
                 ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv",countryNames);
                 List<Cities> citiesList = importerCities.fetchDataFromDataset();
             
             
-                countries.insertMany(countryList);
-                states.insertMany(statesList);
-                population.insertMany(populationList);
+                // countries.insertMany(countryList);
+                // states.insertMany(statesList);
+                // population.insertMany(populationList);
                 cities.insertMany(citiesList);
 
                 
