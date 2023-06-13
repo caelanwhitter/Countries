@@ -140,7 +140,7 @@
     "Year": null
   },
   {
-    "Country": "Cabo Verde",
+    "Country": "Cape Verde",
     "IndependenceDay": "July 5",
     "Year": 1975
   },
@@ -845,11 +845,6 @@
     "Year": 1946
   },
   {
-    "Country": "Taiwan",
-    "IndependenceDay": null,
-    "Year": null
-  },
-  {
     "Country": "Tajikistan",
     "IndependenceDay": "September 9",
     "Year": 1991
@@ -863,11 +858,6 @@
     "Country": "Thailand",
     "IndependenceDay": "December 5",
     "Year": 1932
-  },
-  {
-    "Country": "Timor-Leste",
-    "IndependenceDay": "May 20",
-    "Year": 2002
   },
   {
     "Country": "Togo",
