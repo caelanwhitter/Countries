@@ -140,11 +140,6 @@
     "Year": null
   },
   {
-    "Country": "Cape Verde",
-    "IndependenceDay": "July 5",
-    "Year": 1975
-  },
-  {
     "Country": "Cambodia",
     "IndependenceDay": "November 9",
     "Year": 1953
@@ -158,6 +153,11 @@
     "Country": "Canada",
     "IndependenceDay": "July 1",
     "Year": 1867
+  },
+  {
+    "Country": "Cape Verde",
+    "IndependenceDay": "July 5",
+    "Year": 1975
   },
   {
     "Country": "Central African Republic",
