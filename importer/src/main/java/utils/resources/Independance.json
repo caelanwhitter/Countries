@@ -190,11 +190,6 @@
     "Year": 1975
   },
   {
-    "Country": "Democratic Republic of the Congo",
-    "IndependenceDay": "June 30",
-    "Year": 1960
-  },
-  {
     "Country": "Costa Rica",
     "IndependenceDay": "September 15",
     "Year": 1821
@@ -218,6 +213,11 @@
     "Country": "Czech Republic",
     "IndependenceDay": "January 1",
     "Year": 1993
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "IndependenceDay": "June 30",
+    "Year": 1960
   },
   {
     "Country": "Denmark",
