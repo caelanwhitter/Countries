@@ -40,6 +40,7 @@ public class MongoDB {
                 final String COLLECTION_STATES = "states";
                 final String COLLECTION_CITIES = "cities";
                 final String COLLECTION_POPULATION = "population";
+                final String COLLECTION_INDEPENDANCE = "independance";
         
                 System.out.println("Importing data into: '" + DATABASE_NAME + "'...");
         
@@ -59,6 +60,7 @@ public class MongoDB {
                 MongoCollection<States> states = database.getCollection(COLLECTION_STATES, States.class);
                 MongoCollection<Cities> cities = database.getCollection(COLLECTION_CITIES, Cities.class);
                 MongoCollection<Population> population = database.getCollection(COLLECTION_POPULATION, Population.class);
+                MongoCollection<Independance> independance = database.getCollection(COLLECTION_INDEPENDANCE, Independance.class);
 
         
                 ImporterCountries importerCountry = new ImporterCountries("importer/src/main/java/utils/resources/countries.csv");
@@ -71,20 +73,24 @@ public class MongoDB {
                 }
             
             
-                // ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
-                // List<Population> populationList = importerPopulation.fetchDataFromDataset();
+                ImporterPopulation importerPopulation = new ImporterPopulation("importer/src/main/java/utils/resources/world_population.csv",countryNames);
+                List<Population> populationList = importerPopulation.fetchDataFromDataset();
 
-                // ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
-                // List<States> statesList = importerStates.fetchDataFromDataset();
+                ImporterStates importerStates = new ImporterStates("importer/src/main/java/utils/resources/states.csv",countryNames);
+                List<States> statesList = importerStates.fetchDataFromDataset();
 
                 ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv",countryNames);
                 List<Cities> citiesList = importerCities.fetchDataFromDataset();
+
+                ImporterCities importerIndependance = new ImporterIndependance("importer/src/main/java/utils/resources/Independance.json",countryNames);
+                List<Independance> independanceList = importerIndependance.fetchDataFromDataset();
             
             
-                // countries.insertMany(countryList);
-                // states.insertMany(statesList);
-                // population.insertMany(populationList);
+                countries.insertMany(countryList);
+                states.insertMany(statesList);
+                population.insertMany(populationList);
                 cities.insertMany(citiesList);
+                independance.insertMany(independanceList);
 
                 
             
