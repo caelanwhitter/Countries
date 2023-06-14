@@ -2,8 +2,19 @@ import org.json.simple.*;
 import org.json.simple.parser.*;
 
 import java.io.FileReader;
+import java.util.List;
 
 public class ImporterIndependance {
+
+    private String independanceAttributesPath;
+
+    public ImporterIndependance(String pathIndependance, List<String> countryNames) {
+      
+        this.independanceAttributesPath = pathIndependance;
+      
+    }
+
+
     public static void main(String[] args) {
         JSONParser parser = new JSONParser();
 

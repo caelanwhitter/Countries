@@ -140,11 +140,6 @@
     "Year": null
   },
   {
-    "Country": "Cabo Verde",
-    "IndependenceDay": "July 5",
-    "Year": 1975
-  },
-  {
     "Country": "Cambodia",
     "IndependenceDay": "November 9",
     "Year": 1953
@@ -158,6 +153,11 @@
     "Country": "Canada",
     "IndependenceDay": "July 1",
     "Year": 1867
+  },
+  {
+    "Country": "Cape Verde",
+    "IndependenceDay": "July 5",
+    "Year": 1975
   },
   {
     "Country": "Central African Republic",
@@ -190,16 +190,6 @@
     "Year": 1975
   },
   {
-    "Country": "Congo (Brazzaville)",
-    "IndependenceDay": "August 15",
-    "Year": 1960
-  },
-  {
-    "Country": "Congo (Kinshasa)",
-    "IndependenceDay": "June 30",
-    "Year": 1960
-  },
-  {
     "Country": "Costa Rica",
     "IndependenceDay": "September 15",
     "Year": 1821
@@ -223,6 +213,11 @@
     "Country": "Czech Republic",
     "IndependenceDay": "January 1",
     "Year": 1993
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "IndependenceDay": "June 30",
+    "Year": 1960
   },
   {
     "Country": "Denmark",
@@ -845,11 +840,6 @@
     "Year": 1946
   },
   {
-    "Country": "Taiwan",
-    "IndependenceDay": null,
-    "Year": null
-  },
-  {
     "Country": "Tajikistan",
     "IndependenceDay": "September 9",
     "Year": 1991
@@ -863,11 +853,6 @@
     "Country": "Thailand",
     "IndependenceDay": "December 5",
     "Year": 1932
-  },
-  {
-    "Country": "Timor-Leste",
-    "IndependenceDay": "May 20",
-    "Year": 2002
   },
   {
     "Country": "Togo",
