@@ -48,7 +48,7 @@ public class Independance {
 		return year;
 	}
 
-	public void getYear(String year) {
+	public void setYear(String year) {
 		this.year = year;
 	}
 
