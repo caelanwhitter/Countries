@@ -1,24 +1,28 @@
 import org.json.simple.*;
 import org.json.simple.parser.*;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.io.FileReader;
 import java.util.List;
 
 public class ImporterIndependance {
 
     private String independanceAttributesPath;
+    private List<Independance> independanceList = new ArrayList<Independance>();
 
-    public ImporterIndependance(String pathIndependance, List<String> countryNames) {
+    public ImporterIndependance(String pathIndependance) {
       
         this.independanceAttributesPath = pathIndependance;
       
     }
 
 
-    public static void main(String[] args) {
+ public List<States> fetchDataFromDataset() throws IOException {
+        Independance independance = new Independance;
         JSONParser parser = new JSONParser();
 
-        try (FileReader reader = new FileReader("path/to/your/json/file.json")) {
+        try (FileReader reader = new FileReader(independanceAttributesPath)) {
             // Parse the JSON file
             Object obj = parser.parse(reader);
 
@@ -30,7 +34,7 @@ public class ImporterIndependance {
                 JSONObject jsonObject = (JSONObject) item;
 
                 // Access the JSON object's properties
-                String name = (String) jsonObject.get("name");
+                independance.setName = (String) jsonObject.get("name");
                 int age = ((Long) jsonObject.get("age")).intValue();
 
                 // Print the values
