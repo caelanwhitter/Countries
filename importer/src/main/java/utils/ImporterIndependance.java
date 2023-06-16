@@ -34,13 +34,12 @@ public class ImporterIndependance {
                 JSONObject jsonObject = (JSONObject) item;
 
                 // Access the JSON object's properties
-                independance.setName = (String) jsonObject.get("name");
-                int age = ((Long) jsonObject.get("age")).intValue();
-
-                // Print the values
-                System.out.println("Name: " + name);
-                System.out.println("Age: " + age);
-                System.out.println();
+                independance.setName((String) jsonObject.get("Country"));
+                independance.setIndependanceDay((String) jsonObject.get("IndependenceDay"));
+                independance.setYear((String) jsonObject.get("Year"));
+                
+                independanceList.add(independance);
+      
             }
         } catch (Exception e) {
             e.printStackTrace();
