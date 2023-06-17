@@ -2,9 +2,7 @@ package utils;
 
 public class Cities {
     private String name, country, latitude, longitude;
-    // private List<States> states;
-    // private List<Cities>;
-
+ 
     public Cities() {
 		this.name = "Unknown";
 		this.country = "Unknown";

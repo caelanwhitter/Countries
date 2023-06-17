@@ -82,7 +82,7 @@ public class MongoDB {
                 ImporterCities importerCities = new ImporterCities("importer/src/main/java/utils/resources/cities.csv",countryNames);
                 List<Cities> citiesList = importerCities.fetchDataFromDataset();
 
-                ImporterCities importerIndependance = new ImporterIndependance("importer/src/main/java/utils/resources/Independance.json",countryNames);
+                ImporterIndependance importerIndependance = new ImporterIndependance("importer/src/main/java/utils/resources/Independance.json");
                 List<Independance> independanceList = importerIndependance.fetchDataFromDataset();
             
             
